@@ -72,3 +72,21 @@ bool isCharacter(char checkChar)
 	cout << "Checking char: " << checkChar << endl;
 	return (checkChar >= 'a' && checkChar <= 'z') || (checkChar >= 'A' && checkChar <= 'Z');
 }
+
+
+// check range
+CharCaseRange resolveChactCaseRange(char checkChar)
+{
+	if (checkChar >= 'a' && checkChar <= 'z')
+	{
+		return lowerCase;
+	}
+	else if (checkChar >= 'A' && checkChar <= 'Z')
+	{
+		return upperCase;
+	}
+	else
+	{
+		return outOfRange;
+	}
+}
