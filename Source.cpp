@@ -65,6 +65,10 @@ char character(char start, int offset)
 	}
 
 	return start;
+}
 
-
+bool isCharacter(char checkChar)
+{
+	cout << "Checking char: " << checkChar << endl;
+	return (checkChar >= 'a' && checkChar <= 'z') || (checkChar >= 'A' && checkChar <= 'Z');
 }
