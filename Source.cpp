@@ -25,9 +25,11 @@ int main()
 
 	try
 	{
-		character('a', 1);
+		ch = character('a', 1);
+		//ch = character('a', -1);
+		//ch = character('Z', -1);
 		//ch = character('?', 5);
-		cout << "The character is " << ch << endl;
+		
 	}
 	catch (string excpeption)
 	{
